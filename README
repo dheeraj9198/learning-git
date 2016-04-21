@@ -1,0 +1,111 @@
+git init //initialize git repo
+git add . //add all in this dir
+git commit -m "message"
+
+git log
+git log -n 5 //top 5 logs
+git log --oneline -5 //top 5 logs
+git log --since=2016-4-16
+git log --till=2016-4-19
+git log --grep="message"
+git log --author="sachan"
+git log sdsdsd..dsdsdd <sha1 1- 2>
+git log --graph
+
+working dir->git add .->staging index->git commit->local repo
+HEAD = pointer to current branch in repo
+
+git status
+git diff -> working and staging diff
+git diff --cached/staged ->staging and repo difference
+git diff sha1 index.html
+git diff --stat --summary sha1..HEAD 
+git diff -w sha1..HEAD //ignore all white spaces
+git didd --color-words //just show the diff no+-
+
+git rm filename -> remove from repo and file system
+git rm --cached fielname -> remove from staging
+git mv abc.txt xyz.txt
+git commit -am "message" -> add files and commit
+git commit --amend -am "mesaage" -> add changes to last commit 
+					to create an entirely new commit,change commit message
+git commit --amend --no-edit -> above but same commit message					
+
+//undo changes
+git checkout -- file -> -- for file distinguish between branch
+git checkout HEAD file
+git checkout sha1 -- file
+					
+git revert sha1 --> revert a commit
+git reset --hard sha1 -->Resets the staging index and working tree. Any
+                      changes to tracked files in the working tree since
+					  <commit> are discarded.	
+git reset --mixed sha1 -->Resets the  staging index but not the working 			
+						tree
+git reset --soft sha1 --> Does not touch the index file or the working tree at all 
+						(but resets the head to <commit>						
+
+git clean -n/-i/-f --> remove untracked files 
+
+#stop tracking after added
+git rm --cached file.txt
+#track empty dolder
+add a empty file .gitkeep
+
+------------------------------------------
+
+git ls-tree HEAD^
+
+git show sha1
+
+#branching
+git branch -->show current branch
+git branch one -->create a new branch
+Git branch one master ---> create new branch one from master
+git checkout one -->switch branch
+git checkout -b one -->create and switch to one
+git branch -d one -->delete a branch
+git branch --merged sha1 -->Only list branches whose tips are reachable from the 
+							specified commit (HEAD if not specified)
+git branch -m master new_branch --> create a new branch from old branch
+git merge new_branch --> merge new branch in current branch
+Git merge one two ---> merge one and two on current branch
+git merge --no -ff branch -->no fast forward merge
+git merge --ff -only --> only fast forward merge
+-----------------------------------------
+
+git stash save "message"
+git stash list
+git stash show -p stash@{0}
+git stash pop stash@{0}
+git stash apply stash@{0}
+git stash drop stash@{0}
+git stash clear
+
+#git fetch (remote to origin/master local)
+git remote add origin url
+git push -u origin master
+git push -u origin new_branch
+git remote
+git remote -v
+git clone url folder_name
+
+git config user.email "you@example.com"
+git config user.name "Your Name
+git config credential.helper store
+
+git push -u origin branch_name ----> -u = --set-upstream
+git branch --set-upstream branch origin/branch
+git checkout -b branch origin/branch
+
+git fetch origin
+git merge origin/master
+
+#deleting remote branch
+git push origin :branch
+git push origin --delete branch
+
+git fetch -p -->This will update the local database of remote branches.
+
+
+
