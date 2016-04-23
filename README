@@ -73,6 +73,10 @@ Git merge one two ---> merge one and two on current branch
 git merge --no -ff branch -->no fast forward merge
 git merge --ff -only --> only fast forward merge
 -----------------------------------------
+#rebase
+git rebase master
+git rebase master topic -->just a short-hand of git checkout topic followed by git rebase master
+-----------------------------------------
 
 git stash save "message"
 git stash list
