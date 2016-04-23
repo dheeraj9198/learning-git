@@ -21,7 +21,7 @@ git diff --cached/staged ->staging and repo difference
 git diff sha1 index.html
 git diff --stat --summary sha1..HEAD 
 git diff -w sha1..HEAD //ignore all white spaces
-git didd --color-words //just show the diff no+-
+git diff --color-words //just show the diff no+-
 
 git rm filename -> remove from repo and file system
 git rm --cached fielname -> remove from staging
