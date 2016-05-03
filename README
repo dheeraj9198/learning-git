@@ -110,6 +110,11 @@ git push origin :branch
 git push origin --delete branch
 
 git fetch -p -->This will update the local database of remote branches.
+---------------------tagging-------------------------------------
+git tag //show tags
+git tag name //create tag
+git push --tags //push tags to remote
+git checkout tags/<tag_name> // checkout tag
 
 
 
