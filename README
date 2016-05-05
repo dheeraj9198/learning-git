@@ -116,5 +116,6 @@ git tag name //create tag
 git push --tags //push tags to remote
 git checkout tags/<tag_name> // checkout tag
 
-
+git tag -d release01 //delete local
+git push origin :refs/tags/release01 //delete remote
 
