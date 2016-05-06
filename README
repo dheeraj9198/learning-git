@@ -118,4 +118,4 @@ git checkout tags/<tag_name> // checkout tag
 
 git tag -d release01 //delete local
 git push origin :refs/tags/release01 //delete remote
-
+git fetch origin refs/tags/*:refs/tags/* --prune // sync tags from remote to local
