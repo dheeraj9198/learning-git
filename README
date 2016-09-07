@@ -123,3 +123,5 @@ git fetch origin refs/tags/*:refs/tags/* --prune // sync tags from remote to loc
 You can use git cherry-pick to apply a single commit by itself to your current branch.
 
 git cherry-pick d42c389f
+-------------------git find remote info -------------------------------------------
+git remote -v
