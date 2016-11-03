@@ -76,6 +76,7 @@ git merge --ff -only --> only fast forward merge
 #rebase
 git rebase master
 git rebase master topic -->just a short-hand of git checkout topic followed by git rebase master
+git rebase -i --> for merging multiple commits into one
 -----------------------------------------
 
 git stash save "message"
