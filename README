@@ -80,7 +80,15 @@ git merge --ff -only --> only fast forward merge
 #rebase
 git rebase master
 git rebase master topic -->just a short-hand of git checkout topic followed by git rebase master
-git rebase -i --> for merging multiple commits into one
+
+#merging multiple commits into one
+1-git rebase -i --> open in vi editor
+2-Change 'pick' to 'squash'/'s'
+pick f7f3f6d changed my name a bit
+squash 310154e updated README formatting and added blame
+squash a5f4a0d added cat-file
+3-save from editor
+
 -----------------------------------------
 
 git stash save "message"
