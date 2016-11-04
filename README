@@ -60,6 +60,10 @@ git show sha1
 
 #branching
 git branch -->show current branch
+git branch -r --> show all remote branches
+git branch -a --> show all branches (local + remote)
+git branch -l --> show all local branches
+
 git branch one -->create a new branch
 Git branch one master ---> create new branch one from master
 git checkout one -->switch branch
