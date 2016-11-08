@@ -138,3 +138,6 @@ You can use git cherry-pick to apply a single commit by itself to your current b
 git cherry-pick d42c389f
 -------------------git find remote info -------------------------------------------
 git remote -v
+
+error: The following untracked working tree files would be overwritten by checkout:
+git clean  -d  -fx ""
