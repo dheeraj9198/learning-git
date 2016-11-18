@@ -73,6 +73,10 @@ git checkout -b one -->create and switch to one
 git branch -d one -->delete a branch
 git branch --merged sha1 -->Only list branches whose tips are reachable from the 
 							specified commit (HEAD if not specified)
+#deleting remote branch
+git push origin :branch
+git push origin --delete branch							
+							
 git branch -m master new_branch --> create a new branch from old branch
 git merge new_branch --> merge new branch in current branch
 Git merge one two ---> merge one and two on current branch
