@@ -147,3 +147,7 @@ git remote -v
 
 error: The following untracked working tree files would be overwritten by checkout:
 git clean  -d  -fx ""
+
+--delete a remote commit --
+
+git push origin +dd61ab32^:master
