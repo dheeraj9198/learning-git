@@ -113,6 +113,7 @@ git remote
 git remote -v
 git clone url folder_name
 
+git config credential.helper store //to store creds
 git config user.email "you@example.com"
 git config user.name "Your Name
 git config credential.helper store
