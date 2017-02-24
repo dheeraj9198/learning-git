@@ -155,3 +155,7 @@ git push origin +dd61ab32^:master
 
 -------add a file from different branch --------
 git checkout source_branch <paths>
+
+
+-----git push all but few commits ----
+git push origin master~3:master (dont push 3 latest commits)
